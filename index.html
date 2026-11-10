@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Floor · PumpGrok Desk</title>
+    <meta
+      name="description"
+      content="PumpGrok Desk is a visual paper floor for a Solana memecoin research desk. Manual tickets only. No wallet connection and no live trading."
+    />
+    <meta name="theme-color" content="#090b10" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,650&family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/desk.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to desk</a>
+    <div class="stage">
+      <div class="console">
+        <header class="mast">
+          <div class="brand">
+            <img class="mark" src="assets/mark.svg" width="44" height="44" alt="" />
+            <div>
+              <p class="eyebrow">Solana memecoin paper floor</p>
+              <h1>PumpGrok <span>Desk</span></h1>
+            </div>
+          </div>
+
+          <div class="mode" role="group" aria-label="Engagement">
+            <button type="button" class="mode-btn is-on" id="mode-paper" aria-pressed="true">
+              <span class="mode-k">Engagement</span>
+              <span class="mode-v">Paper</span>
+            </button>
+            <button
+              type="button"
+              class="mode-btn is-locked"
+              id="mode-live"
+              aria-pressed="false"
+              aria-disabled="true"
+            >
+              <span class="mode-k">Live</span>
+              <span class="mode-v">Unavailable</span>
+            </button>
+          </div>
+
+          <div class="mast-meta">
+            <p class="clock-line">
+              <time id="clock" datetime="">--:--:--</time>
+              <span>UTC</span>
+            </p>
+            <p class="who">
+              <span class="k">Designated account</span>
+              FOMO @iamkingwize
+            </p>
+            <p class="who-sub">Wallet designated, not connected</p>
+          </div>
+        </header>
+
+        <p class="session" aria-label="Session facts">
+          <span>Paper only</span>
+          <span>Autonomy · manual-ticket</span>
+          <span>No venue link</span>
+          <span>No signing</span>
+        </p>
+
+        <div class="shell">
+          <nav class="nav" aria-label="Desk views">
+            <button type="button" data-view-target="floor" class="is-current" aria-current="page">
+              <span class="nav-ix">01</span> Floor
+            </button>
+            <button type="button" data-view-target="risk">
+              <span class="nav-ix">02</span> Risk
+            </button>
+            <button type="button" data-view-target="seats">
+              <span class="nav-ix">03</span> Seats
+            </button>
+            <button type="button" data-view-target="book">
+              <span class="nav-ix">04</span> Book
+            </button>
+            <button type="button" data-view-target="leads">
+              <span class="nav-ix">05</span> Leads
+            </button>
+            <button type="button" data-view-target="journal">
+              <span class="nav-ix">06</span> Journal
+            </button>
+          </nav>
+
+          <main id="main">
+            <section class="view is-active" data-view="floor" aria-labelledby="floor-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Desk status</p>
+                  <h2 id="floor-title">The floor is on paper.</h2>
+                </div>
+                <p class="lede">
+                  A visual operator desk for written policy and an empty paper book. Nothing on this page reads a wallet, signs a transaction, or sends an order.
+                </p>
+              </div>
+
+              <div class="floor-grid">
+                <article class="ticket" aria-label="Manual ticket, display only">
+                  <div class="ticket-top">
+                    <div>
+                      <p class="ticket-serial">PG-FLOOR-00</p>
+                      <h3>Manual ticket</h3>
+                    </div>
+                    <p class="stamp" aria-hidden="true"><span>Paper</span>only</p>
+                  </div>
+                  <dl class="ticket-dl">
+                    <div>
+                      <dt>Engagement</dt>
+                      <dd>Paper · simulated attention</dd>
+                    </div>
+                    <div>
+                      <dt>Autonomy</dt>
+                      <dd>manual-ticket</dd>
+                    </div>
+                    <div>
+                      <dt>Capital cap</dt>
+                      <dd>$50 USDC, plus SOL for fees</dd>
+                    </div>
+                    <div>
+                      <dt>Max size</dt>
+                      <dd>$5 USDC per trade</dd>
+                    </div>
+                    <div>
+                      <dt>Open slot</dt>
+                      <dd>0 of 1</dd>
+                    </div>
+                    <div>
+                      <dt>Route</dt>
+                      <dd>None · this ticket cannot be submitted</dd>
+                    </div>
+                  </dl>
+                  <p class="ticket-foot">Display copy of desk policy. Not an order, not a signature, not a fill.</p>
+                </article>
+
+                <div class="stack">
+                  <article class="panel">
+                    <h3>Operator</h3>
+                    <dl class="facts">
+                      <div>
+                        <dt>Account</dt>
+                        <dd>FOMO @iamkingwize</dd>
+                      </div>
+                      <div>
+                        <dt>Wallet</dt>
+                        <dd>Designated, not connected</dd>
+                      </div>
+                      <div>
+                        <dt>Trading</dt>
+                        <dd>No live path</dd>
+                      </div>
+                      <div>
+                        <dt>Book</dt>
+                        <dd>Flat</dd>
+                      </div>
+                    </dl>
+                  </article>
+                  <article class="panel halt-pair">
+                    <h3>Halts, armed as policy</h3>
+                    <div>
+                      <p class="big">5%</p>
+                      <p>Daily loss halt. Constitutional floor, measured against wallet equity. Equity is not read while the wallet stays disconnected.</p>
+                    </div>
+                    <div>
+                      <p class="big">15%</p>
+                      <p>Drawdown halt from peak equity. No peak is marked, because this desk is not attached to a balance.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <ul class="stat-row">
+                <li>
+                  <span class="k">Capital cap</span>
+                  <strong>$50</strong>
+                  <span>USDC, plus SOL for fees</span>
+                </li>
+                <li>
+                  <span class="k">Max size</span>
+                  <strong>$5</strong>
+                  <span>USDC per trade</span>
+                </li>
+                <li>
+                  <span class="k">Open positions</span>
+                  <strong>0 / 1</strong>
+                  <span>Paper book is empty</span>
+                </li>
+                <li>
+                  <span class="k">Autonomy</span>
+                  <strong>Manual</strong>
+                  <span>Ticket, not a bot send</span>
+                </li>
+              </ul>
+            </section>
+
+            <section class="view" data-view="risk" aria-labelledby="risk-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Risk limits</p>
+                  <h2 id="risk-title">The sleeve is small, and the halts are written down.</h2>
+                </div>
+                <p class="lede">
+                  These figures are desk policy. They are not a live risk system and they are not computed from an exchange balance.
+                </p>
+              </div>
+
+              <ul class="limit-grid">
+                <li>
+                  <span class="k">Capital cap</span>
+                  <strong>$50 USDC</strong>
+                  <span>Plus SOL held for fees. The sleeve is the whole working capital of this paper desk.</span>
+                </li>
+                <li>
+                  <span class="k">Max size per trade</span>
+                  <strong>$5 USDC</strong>
+                  <span>One ticket may not imagine a larger paper size than this.</span>
+                </li>
+                <li>
+                  <span class="k">Max open positions</span>
+                  <strong>1</strong>
+                  <span>The book may hold a single paper name. It currently holds none.</span>
+                </li>
+                <li>
+                  <span class="k">Daily loss halt</span>
+                  <strong>5%</strong>
+                  <span>Of wallet equity. Constitutional floor. Not measured: the wallet is not connected.</span>
+                </li>
+                <li>
+                  <span class="k">Drawdown halt</span>
+                  <strong>15%</strong>
+                  <span>Of peak equity. Peak is unmarked while no equity feed exists.</span>
+                </li>
+                <li>
+                  <span class="k">Engagement</span>
+                  <strong>Paper</strong>
+                  <span>Live stays unavailable. Autonomy is manual-ticket.</span>
+                </li>
+              </ul>
+
+              <div class="split">
+                <article class="panel">
+                  <h3>What is measured here</h3>
+                  <dl class="facts">
+                    <div>
+                      <dt>Paper exposure</dt>
+                      <dd>$0.00 · book flat</dd>
+                    </div>
+                    <div>
+                      <dt>Open slots used</dt>
+                      <dd>0 of 1</dd>
+                    </div>
+                    <div>
+                      <dt>Wallet equity</dt>
+                      <dd>Not read</dd>
+                    </div>
+                    <div>
+                      <dt>Halt state</dt>
+                      <dd>Policy only</dd>
+                    </div>
+                  </dl>
+                </article>
+                <article class="panel refuse">
+                  <h3>This desk does not</h3>
+                  <ul>
+                    <li>Connect a wallet, or ask for a signature</li>
+                    <li>Import a key, seed phrase, or secret</li>
+                    <li>Build, sign, or send a transaction</li>
+                    <li>Route a ticket to a venue</li>
+                    <li>Treat a public address as spending authority</li>
+                  </ul>
+                </article>
+              </div>
+            </section>
+
+            <section class="view" data-view="seats" aria-labelledby="seats-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Seats</p>
+                  <h2 id="seats-title">Ten seats. None of them can trade.</h2>
+                </div>
+                <p class="lede">
+                  Roles on a manual-ticket floor. They describe how a person would look at a name. They are idle, and they have no send button.
+                </p>
+              </div>
+              <ul class="seat-grid">
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="brass"></span>
+                      <h3>CHIEF</h3>
+                      <span class="seat-state">On watch</span>
+                    </header>
+                    <p>Holds the stamp. A note stays a note until a person would accept it, and accepting it here is still paper.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="teal"></span>
+                      <h3>SCOUT</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Brings public-page leads to the board. Does not size a position and does not rank a call.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="halt"></span>
+                      <h3>RISK</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Compares any idea with the $50 sleeve, the $5 size, the single open slot, and both halt lines.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="ink"></span>
+                      <h3>WHALE</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Reads holder concentration as a research flag. A large holder is not a reason to copy anyone.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="brass"></span>
+                      <h3>SNIPER</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Writes timing as a note on a paper ticket. The seat cannot fire, sign, or send.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="halt"></span>
+                      <h3>RUG</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Looks for liquidity, control, and exit-trap patterns before a name is discussed as a ticket.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="teal"></span>
+                      <h3>EXIT</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>States the leave condition before any paper size is considered. The book is flat, so no leave is pending.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="brass"></span>
+                      <h3>SHILL</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Labels narrative heat so attention is not mistaken for authorization.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="teal"></span>
+                      <h3>SIGNAL</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Logs a public signal as text. A signal on this desk is not an order.</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="seat">
+                    <header>
+                      <span class="pip" data-tone="ink"></span>
+                      <h3>JOURNAL</h3>
+                      <span class="seat-state">Idle</span>
+                    </header>
+                    <p>Keeps the paper tape honest, including flat days. Realized and unrealized P&amp;L are both zero.</p>
+                  </article>
+                </li>
+              </ul>
+            </section>
+
+            <section class="view" data-view="book" aria-labelledby="book-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Open positions</p>
+                  <h2 id="book-title">The paper book is flat.</h2>
+                </div>
+                <p class="lede">
+                  Open positions: 0. The desk allows one. No row is a fill, because no manual paper ticket has been filed, and this page could not send one if it had.
+                </p>
+              </div>
+
+              <div class="blotter">
+                <div class="blotter-bar">
+                  <p><span class="k">Venue</span> None</p>
+                  <p><span class="k">Mark source</span> No live feed</p>
+                  <p><span class="k">Slot</span> 0 of 1</p>
+                </div>
+                <table>
+                  <caption class="sr-only">
+                    Open paper positions. The book is empty.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Side</th>
+                      <th scope="col">Paper size</th>
+                      <th scope="col">Opened</th>
+                      <th scope="col">Desk mark</th>
+                      <th scope="col">Unrealized</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="6" class="empty-cell">
+                        No open paper position. The single slot is unused.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="view" data-view="leads" aria-labelledby="leads-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Research board</p>
+                  <h2 id="leads-title">No lead is filed.</h2>
+                </div>
+                <p class="lede">
+                  Leads are operator notes gathered from public pages. This static board does not accept submissions, does not score tokens, and does not turn a card into a ticket.
+                </p>
+              </div>
+
+              <article class="panel anatomy">
+                <h3>What a lead card would carry</h3>
+                <ol>
+                  <li>What the name is, in the operator’s own words</li>
+                  <li>Why it is on the board</li>
+                  <li>What would kill the idea</li>
+                  <li>The public page it came from</li>
+                </ol>
+              </article>
+
+              <div class="board" aria-label="Lead columns">
+                <section class="column" aria-labelledby="col-inbox">
+                  <header>
+                    <h3 id="col-inbox">Inbox</h3>
+                    <span>0</span>
+                  </header>
+                  <p class="ghost">Empty. A scout note would land here first.</p>
+                </section>
+                <section class="column" aria-labelledby="col-review">
+                  <header>
+                    <h3 id="col-review">In review</h3>
+                    <span>0</span>
+                  </header>
+                  <p class="ghost">Empty. Risk, rug, and exit would read a card here before any paper size.</p>
+                </section>
+                <section class="column" aria-labelledby="col-parked">
+                  <header>
+                    <h3 id="col-parked">Parked</h3>
+                    <span>0</span>
+                  </header>
+                  <p class="ghost">Empty. Parked means watched, not queued to trade.</p>
+                </section>
+              </div>
+            </section>
+
+            <section class="view" data-view="journal" aria-labelledby="journal-title">
+              <div class="view-head">
+                <div>
+                  <p class="kicker">Journal and P&amp;L</p>
+                  <h2 id="journal-title">The tape is flat.</h2>
+                </div>
+                <p class="lede">
+                  P&amp;L on this desk is a paper record. With no wallet connected and no tickets filed, realized and unrealized results are zero. The halt lines stay written policy.
+                </p>
+              </div>
+
+              <ul class="pnl">
+                <li>
+                  <span class="k">Realized</span>
+                  <strong>$0.00</strong>
+                  <span>USDC paper</span>
+                </li>
+                <li>
+                  <span class="k">Unrealized</span>
+                  <strong>$0.00</strong>
+                  <span>No open mark</span>
+                </li>
+                <li>
+                  <span class="k">Day</span>
+                  <strong>$0.00</strong>
+                  <span>Halt line is 5% of equity</span>
+                </li>
+                <li>
+                  <span class="k">Drawdown</span>
+                  <strong>—</strong>
+                  <span>15% of peak · peak unmarked</span>
+                </li>
+              </ul>
+
+              <div class="blotter">
+                <div class="blotter-bar">
+                  <p><span class="k">Tickets filed</span> 0</p>
+                  <p><span class="k">Seats writing</span> None</p>
+                  <p><span class="k">Record</span> Local display only</p>
+                </div>
+                <table>
+                  <caption class="sr-only">
+                    Paper journal. No lines have been filed.
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">When</th>
+                      <th scope="col">Seat</th>
+                      <th scope="col">Note</th>
+                      <th scope="col">Paper result</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="empty-cell">
+                        No journal lines. A flat day is still a record: nothing was filed, and nothing was sent.
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          </main>
+        </div>
+
+        <footer class="rail">
+          <ul class="pills" aria-label="Policy strip">
+            <li>Paper</li>
+            <li>manual-ticket</li>
+            <li>Cap $50 USDC + SOL fees</li>
+            <li>Size $5 USDC</li>
+            <li>Max open 1</li>
+            <li>Daily halt 5%</li>
+            <li>Drawdown halt 15%</li>
+          </ul>
+          <p class="colophon">
+            Visual policy desk · not a market quote · not live trading ·
+            <a href="https://github.com/kingwize1/pumpgrok-desk">kingwize1/pumpgrok-desk</a>
+            · MIT
+          </p>
+        </footer>
+      </div>
+    </div>
+    <div id="notice" class="notice" role="status" aria-live="polite"></div>
+    <script src="js/desk.js" defer></script>
+  </body>
+</html>
